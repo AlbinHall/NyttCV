@@ -1,0 +1,183 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url("./media/pexels-eberhard-grossgasteiger-2086620.jpg");
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+
+}
+
+header {
+    background-color: #EEEEEE;
+    color: #fff;
+    padding:10px 0px;
+    margin:1em;
+    box-shadow: 0 0 5px rgba(0,0,0, 0.8);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 1rem;
+    box-shadow: 0 0 5px rgba(0,0,0, 0.8);
+    height: 80vh;
+}
+
+.left-container {
+    color: #eeeeee;
+    padding: 1.5em;
+    height:100%; 
+    background-color: #222831;
+}
+
+.left-container p {
+    margin: 2px;
+}
+
+.top-left-container {
+    border-bottom: 1px solid #eeeeee;
+}
+
+.bottom-left-container {
+    margin-top: 20px;
+}
+
+.bottom-left-container .personal-info-item p{
+    margin-top: 5px;
+}
+
+.right-container {
+    background-color: #EEEEEE;
+    color: #222831;
+}
+
+.personal-info-item {
+    margin: 5px;
+}
+
+.personal-info-item .email {
+    margin-bottom: 20px;
+}
+
+.education-section {
+    margin: 20px;
+    border-top:1px solid black;
+}
+
+.education-item {
+    margin-top: 1em;
+}
+.work-section {
+    margin: 20px;
+    border-top:1px solid black;
+}
+
+.work-header {
+    margin-top: 1em;
+}
+
+.work-section h2 {
+    margin-top: 1em;
+}
+
+.work-item {
+    margin-top: 0.5em;
+}
+
+.education-section h2 {
+    margin-top: 1em;
+}
+
+.interests {
+    border-top: 1px solid black;
+ margin: 20px;
+}
+
+.interests-header{
+    margin-top: 1em;
+}
+
+.interests-item p {
+    margin-top: 0.5em;
+}
+.logo-container {
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    margin:3em;
+}
+
+.logo {
+    box-shadow: 0 0 5px rgba(0,0,0, 0.6);
+    overflow: hidden;
+    width: 10em;
+    height: 10em;
+    border-radius: 50%; 
+}
+
+.logo img {
+    width: 10em;
+    height: 10em;
+    object-fit: cover;
+    border-radius: 50%; 
+    border: 3px solid #eeeeee;
+}
+
+.name-title {
+    color:#EEEEEE;
+    background-color: #222831;
+    padding:20px;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
+.heading {
+    text-align: center;
+}
+
+.name {
+    margin: 0;
+    font-size: 24px;
+}
+
+.about-me-section > *{
+    margin: 20px;
+}
+
+
+@media screen and (max-width: 1024px)
+{
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+        margin: 1rem;
+    }
+
+    .personal-info-container {
+        width: 70%;
+        text-align: center;
+        margin: auto;
+    }
+
+    .personal-info-item h3 {
+        text-align: center;
+    }
+    
+    .top-left-container {
+        border: none;
+    }
+
+    .bottom-left-container {
+        display: none;
+    }
+
+}
+
+
+
